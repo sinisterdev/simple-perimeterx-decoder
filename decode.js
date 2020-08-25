@@ -1,10 +1,9 @@
-const atob = require("atob");
 const fs = require("fs");
 
 function base64Process(str) {
   return decodeURIComponent(
     Array.prototype.map
-      .call(atob(str), function (c) {
+      .call(Buffer.from(str, "base64").toString(), function (c) {
         return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
       })
       .join("")

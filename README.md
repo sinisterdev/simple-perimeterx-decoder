@@ -12,12 +12,6 @@
 
 - How to Setup and decode a perimeterX payload
 
-> Install all the node modules needed
-
-```shell
-$ npm i
-```
-
 > now enter your perimeterX payload in the payload.txt file, then run
 
 ```shell

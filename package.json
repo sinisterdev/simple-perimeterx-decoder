@@ -8,8 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "atob": "^2.1.2",
-    "fs": "0.0.1-security"
-  }
+  "dependencies": {}
 }
