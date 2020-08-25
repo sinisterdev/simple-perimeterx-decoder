@@ -18,6 +18,11 @@ function payloadDecode(message) {
 }
 
 const payload = fs.readFileSync("payload.txt", "utf8");
+
+if (!fs.existsSync( __dirname + '/decoded/')) {
+  fs.mkdirSync( __dirname + '/decoded/');
+}
+
 fs.writeFileSync(
   __dirname + `/decoded/${+new Date()}.json`,
   payloadDecode(payload)
